@@ -98,10 +98,14 @@ IK_out IK(float x, float y, float z) {
 
   //Forward-Backward Motion
   x = x * -1;
-  double theta_t = atan((x/z));
+  double theta_t = atan((x/z)); //cos but doesn't work
   theta_t = radToDeg(theta_t);
   double theta_x = 90 - theta_t;
-  
 
-  return {theta_z, theta_x, 0};
+  //Rotate Translate Axis
+  double theta_y = asin(y/z);
+  theta_y = radToDeg(theta_y);
+  theta_y = 90 - theta_y;
+
+  return {theta_z, theta_x, theta_y};
 }

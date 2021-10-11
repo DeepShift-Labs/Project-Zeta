@@ -26,61 +26,18 @@ void setup() {
   home(3000);
   //  walk();
 
-  IK_out ik = IK(0, 0, 20);
+  IK_out ik = IK(0, 7, 29);
   int pos = degToPos(ik.m2, BR1);
   int pos1 = degToPos(ik.m1, BR1);
+  int pos2 = degToPos(ik.m3, BR1);
+  Serial.println(pos);
+  Serial.println(pos1);
   Controller.moveServo(BR2, pos, 3000);
   delay(3000);
   Controller.moveServo(BR1, pos1, 3000);
   delay(3000);
-
-  ik = IK(0, 0, 29);
-  pos = degToPos(ik.m2, BR1);
-  pos1 = degToPos(ik.m1, BR1);
-  Controller.moveServo(BR2, pos, 3000);
+  Controller.moveServo(BR3, pos2, 3000);
   delay(3000);
-  Controller.moveServo(BR1, pos1, 3000);
-  delay(3000);
-
-  ik = IK(10, 0, 29);
-  pos = degToPos(ik.m2, BR1);
-  pos1 = degToPos(ik.m1, BR1);
-  Controller.moveServo(BR2, pos, 3000);
-  delay(3000);
-  Controller.moveServo(BR1, pos1, 3000);
-  delay(3000);
-
-  ik = IK(-10, 0, 29);
-  pos = degToPos(ik.m2, BR1);
-  pos1 = degToPos(ik.m1, BR1);
-  Controller.moveServo(BR2, pos, 3000);
-  delay(3000);
-  Controller.moveServo(BR1, pos1, 3000);
-  delay(3000);
-
-  ik = IK(0, 0, 29);
-  pos = degToPos(ik.m2, BR1);
-  pos1 = degToPos(ik.m1, BR1);
-  Controller.moveServo(BR2, pos, 3000);
-  delay(3000);
-  Controller.moveServo(BR1, pos1, 3000);
-  delay(3000);
-
-  ik = IK(-10, 0, 20);
-  pos = degToPos(ik.m2, BR1);
-  pos1 = degToPos(ik.m1, BR1);
-  Controller.moveServo(BR2, pos, 3000);
-  Controller.moveServo(BR1, pos1, 3000);
-  delay(3000);
-
-  ik = IK(10, 0, 29);
-  pos = degToPos(ik.m2, BR1);
-  pos1 = degToPos(ik.m1, BR1);
-  Controller.moveServo(BR2, pos, 3000);
-  Controller.moveServo(BR1, pos1, 3000);
-  delay(3000);
-
-  home(3000);
 }
 
 void loop() {

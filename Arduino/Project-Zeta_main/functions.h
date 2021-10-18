@@ -71,6 +71,36 @@ int degToPos(int input, int motor) {
   if (motor == BR3) {
     output = map(output, 0, 1000, 1000, 0);
   }
+  
+  if (motor == BL1) {
+    output = map(output, 0, 1000, 0, 1000);
+  }
+  if (motor == BL2) {
+    output = map(output, 0, 1000, 0, 1000);
+  }
+  if (motor == BL3) {
+    output = map(output, 0, 1000, 1000, 0);
+  }
+
+  if (motor == FR1) {
+    output = map(output, 0, 1000, 1000, 0);
+  }
+  if (motor == FR2) {
+    output = map(output, 0, 1000, 1000, 0);
+  }
+  if (motor == FR3) {
+    output = map(output, 0, 1000, 1000, 0);
+  }
+
+  if (motor == FL1) {
+    output = map(output, 0, 1000, 0, 1000);
+  }
+  if (motor == FL2) {
+    output = map(output, 0, 1000, 0, 1000);
+  }
+  if (motor == FL3) {
+    output = map(output, 0, 1000, 1000, 0);
+  }
   return int(round(output));
 }
 

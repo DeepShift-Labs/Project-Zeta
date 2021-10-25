@@ -1,26 +1,16 @@
 void reset_motors(int duration) {
   Controller.moveServos(6, duration, FL1, 500, FL2, 500, FL3, 500, FR1, 500, FR2, 500, FR3, 500);
   delay(duration + 5);
-  Controller.moveServos(6, duration, BL1, 500, BL2, 500, BL3, 500, BR1, 500, BR2, 500, BR3, 500);
+  Controller.moveServos(6, duration, BL1, 500, BL2, 500, BL3, 600, BR1, 500, BR2, 500, BR3, 500);
   delay(duration + 5);
   Controller.moveServos(4, duration, FL2, 500, FR2, 500, BL2, 500, BR2, 500);
-  delay(duration + 5);
-}
-
-void walk() {
-  int duration = 3003;
-  Controller.moveServos(6, duration, FL1, 500, FL2, 450, FL3, 500, FR1, 500, FR2, 750, FR3, 500);
-  delay(duration + 5);
-  Controller.moveServos(6, duration, BL1, 500, BL2, 250, BL3, 500, BR1, 500, BR2, 550, BR3, 500);
-  delay(duration + 5);
-  Controller.moveServos(4, duration, FL2, 250, FR2, 750, BL2, 250, BR2, 750);
   delay(duration + 5);
 }
 
 void home(int duration) {
   Controller.moveServos(6, duration, FL1, 500, FL2, 500, FL3, 500, FR1, 500, FR2, 500, FR3, 500);
   delay(duration / 4);
-  Controller.moveServos(6, duration, BL1, 500, BL2, 500, BL3, 500, BR1, 500, BR2, 500, BR3, 500);
+  Controller.moveServos(6, duration, BL1, 500, BL2, 500, BL3, 600, BR1, 500, BR2, 500, BR3, 500);
   delay(duration + 5);
   Controller.moveServos(4, duration, FL2, 500, FR2, 500, BL2, 500, BR2, 500);
   delay(duration + 5);
@@ -80,6 +70,7 @@ int degToPos(int input, int motor) {
   }
   if (motor == BL3) {
     output = map(output, 0, 1000, 1000, 0);
+    output += 100;
   }
 
   if (motor == FR1) {
@@ -138,4 +129,39 @@ IK_out IK(float x, float y, float z) {
   theta_y = 90 - theta_y;
 
   return {theta_z, theta_x, theta_y};
+}
+
+IK_out ik, ik2;
+int pos, pos1, pos2;
+
+void low_set() {
+  ik = IK(0, 0, 26);
+  pos = degToPos(ik.m2, FR2);
+  pos1 = degToPos(ik.m1, FR1);
+  pos2 = degToPos(ik.m3, FR3);
+  Controller.moveServo(FR2, pos, time);
+  Controller.moveServo(FR1, pos1, time);
+  Controller.moveServo(FR3, pos2, time);
+
+  pos = degToPos(ik.m2, BR2);
+  pos1 = degToPos(ik.m1, BR1);
+  pos2 = degToPos(ik.m3, BR3);
+  Controller.moveServo(BR2, pos, time);
+  Controller.moveServo(BR1, pos1, time);
+  Controller.moveServo(BR3, pos2, time);
+
+  pos = degToPos(ik.m2, BL2);
+  pos1 = degToPos(ik.m1, BL1);
+  pos2 = degToPos(ik.m3, BL3);
+  Controller.moveServo(BL2, pos, time);
+  Controller.moveServo(BL1, pos1, time);
+  Controller.moveServo(BL3, pos2, time);
+
+  pos = degToPos(ik.m2, FL2);
+  pos1 = degToPos(ik.m1, FL1);
+  pos2 = degToPos(ik.m3, FL3);
+  Controller.moveServo(FL2, pos, time);
+  Controller.moveServo(FL1, pos1, time);
+  Controller.moveServo(FL3, pos2, time);
+  delay(time);
 }

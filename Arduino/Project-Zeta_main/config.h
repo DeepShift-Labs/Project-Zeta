@@ -17,3 +17,5 @@ LobotServoController Controller(Serial1);
 
 float upper_leg_length = 16.5; //cm
 float lower_leg_length = 19.5; //cm
+
+const int time = 1000;

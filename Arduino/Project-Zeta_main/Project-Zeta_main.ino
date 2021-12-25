@@ -29,7 +29,7 @@ void setup() {
   //low_set();
 
   //up stroke 1
-  ik = IK(4, 0, 22);
+  ik = IK(4, 0, 23);
   pos = degToPos(ik.m2, FR2);
   pos1 = degToPos(ik.m1, FR1);
   pos2 = degToPos(ik.m3, FR3);
@@ -104,7 +104,7 @@ void setup() {
 
 
   //up stroke 2
-  ik = IK(4, 0, 22);
+  ik = IK(4, 0, 23);
   pos = degToPos(ik.m2, FL2);
   pos1 = degToPos(ik.m1, FL1);
   pos2 = degToPos(ik.m3, FL3);
@@ -180,7 +180,7 @@ void setup() {
 
 void loop() {
   //up stroke 1
-  ik = IK(4, 0, 22);
+  ik = IK(4, 0, 23);
   pos = degToPos(ik.m2, FR2);
   pos1 = degToPos(ik.m1, FR1);
   pos2 = degToPos(ik.m3, FR3);
@@ -255,7 +255,7 @@ void loop() {
 
 
   //up stroke 2
-  ik = IK(4, 0, 22);
+  ik = IK(4, 0, 23);
   pos = degToPos(ik.m2, FL2);
   pos1 = degToPos(ik.m1, FL1);
   pos2 = degToPos(ik.m3, FL3);

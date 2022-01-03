@@ -1,3 +1,6 @@
+// Motor ID definitions
+//FL1 - Front-Left-1
+//1 - Foot; 2 - Knee; 3 - Hip
 #define FL1 4
 #define FL2 5
 #define FL3 6
@@ -10,12 +13,13 @@
 #define BR1 7
 #define BR2 8
 #define BR3 9
+//End of  motor ID definitions
 
-#define Debug 1
+#define Debug 1 //Enable Debug
 
-LobotServoController Controller(Serial1);
+LobotServoController Controller(Serial1); // Create Servo Controller Object
 
-float upper_leg_length = 16.5; //cm
-float lower_leg_length = 19.5; //cm
+float upper_leg_length = 16.5; //Leg length in cm for IK
+float lower_leg_length = 19.5; //Leg length in cm for IK
 
-const int time = 500;
+const int time = 700; //Time per motor move command

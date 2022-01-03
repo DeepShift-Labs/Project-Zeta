@@ -3,7 +3,11 @@
 
 <xacro:include filename="$(find zeta_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find zeta_description)/urdf/zeta.trans" />
-<xacro:include filename="$(find zeta_description)/urdf/zeta.gazebo" />
+
+<xacro:include filename="$(find zeta_description)/gazebo/zeta_materials.gazebo" />
+<xacro:include filename="$(find zeta_description)/gazebo/zeta_physics.gazebo" />
+<xacro:include filename="$(find zeta_description)/gazebo/zeta_plugins.gazebo" />
+
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.14461409332930716 0.0883518788335936 0.2064875843501072"/>

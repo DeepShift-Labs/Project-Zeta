@@ -1,6 +1,13 @@
 <launch>
   <param command="$(find xacro)/xacro $(find zeta_description)/urdf/zeta.xacro" name="robot_description"/>
   <node args="-param robot_description -urdf -model zeta" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
+
+  <rosparam file="$(find zeta_description)/config/config.yaml" command="load" />
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="/zeta" args="BL_3_controller joint_state_controller"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+    <remap from="/joint_states" to="/zeta/joint_states" />
+  </node>
+
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="paused" value="true"/>
     <arg name="use_sim_time" value="true"/>

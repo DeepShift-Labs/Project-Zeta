@@ -9,6 +9,7 @@
   <actuator name="BL_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
+<!--    <motorTorqueConstant>17</motorTorqueConstant>-->
   </actuator>
 </transmission>
 

@@ -11,7 +11,7 @@
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.14461409332930716 0.0883518788335936 0.2064875843501072"/>
-    <mass value="0.66109888559714134"/>
+    <mass value="0.26109888559714134"/>
     <inertia ixx="0.000188" ixy="0.0" ixz="-0.0" iyy="0.003858" iyz="-0.0" izz="0.003995"/>
   </inertial>
   <visual>
@@ -53,7 +53,7 @@
 <link name="BL_motor_block_1">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.027223152863659228 -0.014672109847305964 -0.02722359848924935"/>
-    <mass value="0.3833659369300421"/>
+    <mass value="0.08833659369300421"/>
     <inertia ixx="4.7e-05" ixy="-0.0" ixz="-3.2e-05" iyy="8e-05" iyz="0.0" izz="4.7e-05"/>
   </inertial>
   <visual>
@@ -116,7 +116,7 @@
 <link name="BR_motor_block_1">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.027223152862709155 0.014671867515031146 -0.02722359848963765"/>
-    <mass value="0.3833659369300421"/>
+    <mass value="0.08833659369327077"/>
     <inertia ixx="4.7e-05" ixy="-0.0" ixz="-3.2e-05" iyy="8e-05" iyz="0.0" izz="4.7e-05"/>
   </inertial>
   <visual>
@@ -200,7 +200,7 @@
 <link name="FL_motor_block_1">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.02718553583877841 -0.014671926830458815 -0.027187005197919556"/>
-    <mass value="0.3833659369300421"/>
+    <mass value="0.08843072327026845"/>
     <inertia ixx="4.7e-05" ixy="-0.0" ixz="-3.2e-05" iyy="8.1e-05" iyz="-0.0" izz="4.7e-05"/>
   </inertial>
   <visual>
@@ -305,7 +305,7 @@
 <link name="FR_motor_block_1">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.027185535838667285 0.014671684498179257 -0.0271870051983098"/>
-    <mass value="0.3833659369300421"/>
+    <mass value="0.0884307232705417"/>
     <inertia ixx="4.7e-05" ixy="0.0" ixz="-3.2e-05" iyy="8.1e-05" iyz="0.0" izz="4.7e-05"/>
   </inertial>
   <visual>

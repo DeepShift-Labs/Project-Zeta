@@ -3,9 +3,9 @@
   <node args="-param robot_description -urdf -model zeta" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
 
   <rosparam file="$(find zeta_description)/config/config.yaml" command="load" />
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="/simple_model" args="base_to_second_joint_position_controller joint_state_controller --shutdown-timeout 3"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" ns="/zeta" args="Rev46_controller joint_state_controller"/>
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
-    <remap from="/joint_states" to="/simple_model/joint_states" />
+    <remap from="/joint_states" to="/zeta/joint_states" />
   </node>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -13,6 +13,6 @@
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
     <arg name="headless" value="false"/>
-    <arg name="debug" value="true"/>
+    <arg name="debug" value="false"/>
   </include>
 </launch>

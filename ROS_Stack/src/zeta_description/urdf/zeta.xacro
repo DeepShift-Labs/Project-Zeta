@@ -3,11 +3,7 @@
 
 <xacro:include filename="$(find zeta_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find zeta_description)/urdf/zeta.trans" />
-
-<xacro:include filename="$(find zeta_description)/gazebo/zeta_materials.gazebo" />
-<xacro:include filename="$(find zeta_description)/gazebo/zeta_physics.gazebo" />
-<xacro:include filename="$(find zeta_description)/gazebo/zeta_plugins.gazebo" />
-
+<xacro:include filename="$(find zeta_description)/urdf/zeta.gazebo" />
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.14461409332930716 0.0883518788335936 0.2064875843501072"/>
@@ -323,96 +319,96 @@
   </collision>
 </link>
 
-<joint name="Rev46" type="continuous">
+<joint name="BL_1" type="continuous">
   <origin rpy="0 0 0" xyz="-0.054447 0.0 -0.054447"/>
   <parent link="BL_motor_block_1"/>
   <child link="BL_foot_1"/>
   <axis xyz="0.0 1.0 -0.0"/>
 </joint>
 
-<joint name="Rev47" type="continuous">
+<joint name="BL_2" type="continuous">
   <origin rpy="0 0 0" xyz="0.0164 0.075469 -0.051319"/>
   <parent link="BL_top_1"/>
   <child link="BL_motor_block_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rev48" type="continuous">
+<joint name="BL_3" type="continuous">
   <origin rpy="0 0 0" xyz="-0.295505 0.128052 0.206491"/>
   <parent link="base_link"/>
   <child link="BL_top_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
 </joint>
 
-<joint name="Rev49" type="continuous">
+<joint name="BR_1" type="continuous">
   <origin rpy="0 0 0" xyz="-0.054447 0.0 -0.054447"/>
   <parent link="BR_motor_block_1"/>
   <child link="BR_foot_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rev50" type="continuous">
+<joint name="BR_2" type="continuous">
   <origin rpy="0 0 0" xyz="0.0164 -0.075469 -0.051319"/>
   <parent link="BR_top_1"/>
   <child link="BR_motor_block_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rev51" type="continuous">
+<joint name="BR_3" type="continuous">
   <origin rpy="0 0 0" xyz="-0.295505 0.048652 0.206491"/>
   <parent link="base_link"/>
   <child link="BR_top_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Rev54" type="continuous">
+<joint name="FR_3" type="continuous">
   <origin rpy="0 0 0" xyz="-0.024505 0.048652 0.206491"/>
   <parent link="base_link"/>
   <child link="FR_top_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Rev55" type="continuous">
+<joint name="FL_1" type="continuous">
   <origin rpy="0 0 0" xyz="-0.054447 0.0 -0.054447"/>
   <parent link="FL_motor_block_1"/>
   <child link="FL_foot_1"/>
   <axis xyz="0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="Rev56" type="continuous">
+<joint name="FL_2" type="continuous">
   <origin rpy="0 0 0" xyz="0.0164 0.075469 -0.051319"/>
   <parent link="FL_top_1"/>
   <child link="FL_motor_block_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rev57" type="continuous">
+<joint name="FL_3" type="continuous">
   <origin rpy="0 0 0" xyz="-0.024505 0.128052 0.206491"/>
   <parent link="base_link"/>
   <child link="FL_top_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
 </joint>
 
-<joint name="Rigid58" type="fixed">
+<joint name="R_Pipe" type="fixed">
   <origin rpy="0 0 0" xyz="-0.260605 0.067967 0.206491"/>
   <parent link="base_link"/>
   <child link="R_Pipe_1"/>
 </joint>
 
-<joint name="Rigid59" type="fixed">
+<joint name="L_Pipe" type="fixed">
   <origin rpy="0 0 0" xyz="-0.260605 0.108737 0.206491"/>
   <parent link="base_link"/>
   <child link="L_Pipe_1"/>
 </joint>
 
-<joint name="Rev61" type="continuous">
+<joint name="FR_1" type="continuous">
   <origin rpy="0 0 0" xyz="-0.054447 0.0 -0.054447"/>
   <parent link="FR_motor_block_1"/>
   <child link="FR_foot_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rev62" type="continuous">
+<joint name="FR_2" type="continuous">
   <origin rpy="0 0 0" xyz="0.0164 -0.075469 -0.051319"/>
   <parent link="FR_top_1"/>
   <child link="FR_motor_block_1"/>

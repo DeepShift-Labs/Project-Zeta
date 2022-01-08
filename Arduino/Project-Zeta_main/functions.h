@@ -1,12 +1,14 @@
+//Set all motors to middle position
 void reset_motors(int duration) {
-  Controller.moveServos(6, duration, FL1, 500, FL2, 500, FL3, 500, FR1, 500, FR2, 500, FR3, 500);
-  delay(duration + 5);
-  Controller.moveServos(6, duration, BL1, 500, BL2, 500, BL3, 600, BR1, 500, BR2, 500, BR3, 500);
-  delay(duration + 5);
-  Controller.moveServos(4, duration, FL2, 500, FR2, 500, BL2, 500, BR2, 500);
-  delay(duration + 5);
+  Controller.moveServos(6, duration, FL1, 500, FL2, 500, FL3, 500, FR1, 500, FR2, 500, FR3, 500); //Sets first batch of motors to 500
+  delay(duration + 5); //wait for motors to finish move
+  Controller.moveServos(6, duration, BL1, 500, BL2, 500, BL3, 500, BR1, 500, BR2, 500, BR3, 500); //Sets first batch of motors to 500
+  delay(duration + 5); //wait for motors to finish move
+  Controller.moveServos(4, duration, FL2, 500, FR2, 500, BL2, 500, BR2, 500); //Sets first batch of motors to 500
+  delay(duration + 5); //wait for motors to finish move
 }
 
+//Move the motors to their normal standing position(done in to parts to ease motor load and current draw)
 void home(int duration) {
   Controller.moveServos(6, duration, FL1, 500, FL2, 500, FL3, 500, FR1, 500, FR2, 500, FR3, 500);
   delay(duration / 4);
@@ -16,6 +18,7 @@ void home(int duration) {
   delay(duration + 5);
 }
 
+//Move to sitting position(done in to parts to ease motor load and current draw)
 void sit(int duration) {
   Controller.moveServo(FL1, 0, duration);
   Controller.moveServo(FL2, 500, duration);
@@ -35,6 +38,7 @@ void sit(int duration) {
   delay(duration + 5);
 }
 
+//Convert degrees the IK provides into motor coordinates
 int degToPos(int input, int motor) {
   double output;
 
@@ -52,6 +56,7 @@ int degToPos(int input, int motor) {
     output = 500;
   }
 
+  //Invert some motors to standardize the mapping
   if (motor == BR1) {
     output = map(output, 0, 1000, 1000, 0);
   }
@@ -95,16 +100,19 @@ int degToPos(int input, int motor) {
   return int(round(output));
 }
 
+//Convert degrees to radians
 double radToDeg(double rad) {
   double deg = rad * 180;
   deg = deg / PI;
   return deg;
 }
 
+//Work around to C's restriction of functions returning an array. You can create a custom structure and set that as the function type.
 struct IK_out {
   double m1, m2, m3;
 };
 
+//The main IK function. This is complex to explain so I will have a video explaining it. 
 IK_out IK(float x, float y, float z) {
 
   //Up-Down Motion
@@ -131,6 +139,7 @@ IK_out IK(float x, float y, float z) {
   return {theta_z, theta_x, theta_y};
 }
 
+//Useless garbage that you don't need to worry about.
 IK_out ik, ik2;
 int pos, pos1, pos2;
 

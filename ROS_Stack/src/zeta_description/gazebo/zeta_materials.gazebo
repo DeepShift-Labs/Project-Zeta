@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<robot name="zeta" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Black" />
+<xacro:property name="pvc_color" value="Gazebo/White" />
+
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_motor_block_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_top_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_motor_block_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_top_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_top_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_motor_block_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_top_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="R_Pipe_1">
+  <material>${pvc_color}</material>
+</gazebo>
+
+<gazebo reference="L_Pipe_1">
+  <material>${pvc_color}</material>
+</gazebo>
+
+<gazebo reference="FR_foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_motor_block_1">
+  <material>${body_color}</material>
+</gazebo>
+
+</robot>

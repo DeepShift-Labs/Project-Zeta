@@ -13,8 +13,12 @@ The Kinetic's job is to do motion planning and dynamic obstacle avoidance using 
 
 The Cognitive will use a similar layer heiarchy but instead will look the largest change in pattern and will make a sensor priority matrix.
 
+***Please note, these are simply plans and a due to change.***
+
+## Setup and Assembly
+All assembly instructions will be provided on the GitHub.io page. The ROS Stack currently requires the "ros-noetic-desktop-full" which have dependencies for ~200 packages. This will only currently work on multi-core PCs and not on Raspberry Pi. This will eventually be optimized to compile on ARM CPUs. 
 
 ## Open Source
-The whole point of this is to make it as open source as possible. Obviously, all of my code is open source, the motors I used also provide their code and all the information to recreate them, and my 3D model of the dog will be on Thingiverse, hence open source. 
+The whole point of this is to make it as open source as possible. Obviously, all of my code is open source, the motors I used also provide their code and all the information to recreate them, and my 3D model of the dog will be on Thingiverse soon. 
 
 Motors: Lewansoul LX-16A; https://www.hiwonder.com/store/learn/26.html; 

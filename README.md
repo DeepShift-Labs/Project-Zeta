@@ -1,4 +1,6 @@
 # Project-Zeta
+***This repository is incomplete and under development. There may be mistakes or missing information. Please bear with it. ANY QUESTIONS YOU HAVE CAN BE WRITTEN IN THE DISCUSSIONS AND ISSUES. Thank you for cooporating.***
+
 The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. We will do this using a custom built, biomimetic, robot dog, with tons of sensors for environmental perception. This will be used to train a custom-built Z-Algorithm to develop the intelligence.
 
 ## Background

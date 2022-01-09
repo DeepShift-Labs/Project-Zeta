@@ -1,0 +1,55 @@
+zeta_urdf_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  Rev1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev6
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev11_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev11
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev21_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev21
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev26_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev26
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev27_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev27
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev35_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev35
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev37_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev37
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev39_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev39
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev41_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev41
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev44_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev44
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev48_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev48
+    pid: {p: 100.0, i: 0.01, d: 10.0}

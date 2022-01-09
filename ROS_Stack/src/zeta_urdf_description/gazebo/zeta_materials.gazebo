@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<robot name="zeta_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Black" />
+<xacro:property name="pvc_color" value="Gazebo/White" />
+  
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_Foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_Dual_Motor_Mount_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_Top_Bracket_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_Top_Bracket_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_3_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="Pipe_R_1">
+  <material>${pvc_color}</material>
+</gazebo>
+
+<gazebo reference="Pipe_L_1">
+  <material>${pvc_color}</material>
+</gazebo>
+
+<gazebo reference="BR_3_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_3_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_Top_Bracket_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_Dual_Motor_Mount_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_Top_Bracket_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_2_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_1_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FL_3_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_2_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_Foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_Foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_1_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_Foot_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BL_1_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_Dual_Motor_Mount_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="FR_2_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_1_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_Dual_Motor_Mount_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="BR_2_Motor_1">
+  <material>${body_color}</material>
+</gazebo>
+
+</robot>

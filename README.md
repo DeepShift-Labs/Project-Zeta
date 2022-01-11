@@ -23,11 +23,13 @@ The overall point of this project is to make it as open source as possible. My c
 
 Motors: Lewansoul LX-16A; https://www.hiwonder.com/store/learn/26.html; 
 
+
 ## The Team
 
 #### Krishna:
 I am a robotics hobbyist, enthusiast, and creator. I have been in robotics for the past 6 years and I have experience in various fields of study. I have tremendous experience in Python, C, Tensorflow, ROS, as well as electronics, 3D Printing, and much more.
 
 #### Brennan:
+I enjoy making and driving robots. I possess a wide variety of skills such as graphic design, robot design, and social media marketing.
 
 #### Lucas:

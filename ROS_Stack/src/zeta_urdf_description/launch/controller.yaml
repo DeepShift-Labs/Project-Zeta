@@ -5,51 +5,51 @@ zeta_urdf_controller:
     publish_rate: 50
 
   # Position Controllers --------------------------------------
-  Rev1_position_controller:
+  FL_1_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev1
+    joint: FL_1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev6_position_controller:
+  FL_3_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev6
+    joint: FL_3
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev11_position_controller:
+  FR_3_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev11
+    joint: FR_3
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev21_position_controller:
+  BR_3_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev21
+    joint: BR_3
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev26_position_controller:
+  BL_3_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev26
+    joint: BL_3
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev27_position_controller:
+  FL_2_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev27
+    joint: FL_2
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev35_position_controller:
+  BL_2_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev35
+    joint: BL_2
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev37_position_controller:
+  FR_1_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev37
+    joint: FR_1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev39_position_controller:
+  BL_1_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev39
+    joint: BL_1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev41_position_controller:
+  BR_1_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev41
+    joint: BR_1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev44_position_controller:
+  FR_2_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev44
+    joint: FR_2
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev48_position_controller:
+  BR_2_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev48
+    joint: BR_2
     pid: {p: 100.0, i: 0.01, d: 10.0}

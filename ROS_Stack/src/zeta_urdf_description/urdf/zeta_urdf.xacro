@@ -3,13 +3,7 @@
 
 <xacro:include filename="$(find zeta_urdf_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find zeta_urdf_description)/urdf/zeta_urdf.trans" />
-
-
-<xacro:include filename="$(find zeta_urdf_description)/gazebo/zeta_physics.gazebo" />
-<xacro:include filename="$(find zeta_urdf_description)/gazebo/zeta_materials.gazebo" />
-<xacro:include filename="$(find zeta_urdf_description)/gazebo/zeta_plugins.gazebo" />
-
-
+<xacro:include filename="$(find zeta_urdf_description)/urdf/zeta_urdf.gazebo" />
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="0.5865154177311522 -0.47938007450948616 0.24225184206557204"/>
@@ -577,168 +571,168 @@
   </collision>
 </link>
 
-<joint name="Rev1" type="continuous">
+<joint name="FL_1" type="continuous">
   <origin rpy="0 0 0" xyz="-0.0145 -0.006718 -0.006717"/>
   <parent link="FL_1_Motor_1"/>
   <child link="FL_Foot_1"/>
   <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="Rigid3" type="fixed">
+<joint name="FL_M_2" type="fixed">
   <origin rpy="0 0 0" xyz="0.01525 -0.009193 -0.009193"/>
   <parent link="FL_2_Motor_1"/>
   <child link="FL_Dual_Motor_Mount_1"/>
 </joint>
 
-<joint name="Rev6" type="continuous">
+<joint name="FL_3" type="continuous">
   <origin rpy="0 0 0" xyz="-0.0095 -0.0145 0.0"/>
   <parent link="FL_3_Motor_1"/>
   <child link="FL_Top_Bracket_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
 </joint>
 
-<joint name="Rev11" type="continuous">
+<joint name="FR_3" type="continuous">
   <origin rpy="0 0 0" xyz="0.0095 -0.0145 0.0"/>
   <parent link="FR_3_Motor_1"/>
   <child link="FR_Top_Bracket_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Rigid12" type="fixed">
+<joint name="FR_M_3" type="fixed">
   <origin rpy="0 0 0" xyz="1.203237 0.355512 0.242258"/>
   <parent link="base_link"/>
   <child link="FR_3_Motor_1"/>
 </joint>
 
-<joint name="Rigid13" type="fixed">
+<joint name="R_Pipe" type="fixed">
   <origin rpy="0 0 0" xyz="0.469873 -0.499765 0.242258"/>
   <parent link="base_link"/>
   <child link="Pipe_R_1"/>
 </joint>
 
-<joint name="Rigid14" type="fixed">
+<joint name="L_Pipe" type="fixed">
   <origin rpy="0 0 0" xyz="0.469873 -0.458995 0.242258"/>
   <parent link="base_link"/>
   <child link="Pipe_L_1"/>
 </joint>
 
-<joint name="Rigid19" type="fixed">
+<joint name="BR_M_3" type="fixed">
   <origin rpy="0 0 0" xyz="1.203237 0.084512 0.242258"/>
   <parent link="base_link"/>
   <child link="BR_3_Motor_1"/>
 </joint>
 
-<joint name="Rigid20" type="fixed">
+<joint name="BL_M_3" type="fixed">
   <origin rpy="0 0 0" xyz="1.142837 0.084512 0.242258"/>
   <parent link="base_link"/>
   <child link="BL_3_Motor_1"/>
 </joint>
 
-<joint name="Rev21" type="continuous">
+<joint name="BR_3" type="continuous">
   <origin rpy="0 0 0" xyz="0.0095 -0.0145 0.0"/>
   <parent link="BR_3_Motor_1"/>
   <child link="BR_Top_Bracket_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Rigid25" type="fixed">
+<joint name="BL_M_2" type="fixed">
   <origin rpy="0 0 0" xyz="0.01525 -0.009193 -0.009193"/>
   <parent link="BL_2_Motor_1"/>
   <child link="BL_Dual_Motor_Mount_1"/>
 </joint>
 
-<joint name="Rev26" type="continuous">
+<joint name="BL_3" type="continuous">
   <origin rpy="0 0 0" xyz="-0.0095 -0.0145 0.0"/>
   <parent link="BL_3_Motor_1"/>
   <child link="BL_Top_Bracket_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
 </joint>
 
-<joint name="Rev27" type="continuous">
+<joint name="FL_2" type="continuous">
   <origin rpy="0 0 0" xyz="-0.075469 0.01565 -0.051319"/>
   <parent link="FL_Top_Bracket_1"/>
   <child link="FL_2_Motor_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rigid28" type="fixed">
+<joint name="FL_M_1" type="fixed">
   <origin rpy="0 0 0" xyz="0.0 -0.038537 -0.038537"/>
   <parent link="FL_Dual_Motor_Mount_1"/>
   <child link="FL_1_Motor_1"/>
 </joint>
 
-<joint name="Rigid29" type="fixed">
+<joint name="FL_M_3" type="fixed">
   <origin rpy="0 0 0" xyz="1.142837 0.355512 0.242258"/>
   <parent link="base_link"/>
   <child link="FL_3_Motor_1"/>
 </joint>
 
-<joint name="Rev35" type="continuous">
+<joint name="BL_2" type="continuous">
   <origin rpy="0 0 0" xyz="-0.075469 0.01565 -0.051319"/>
   <parent link="BL_Top_Bracket_1"/>
   <child link="BL_2_Motor_1"/>
   <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="Rev37" type="continuous">
+<joint name="FR_1" type="continuous">
   <origin rpy="0 0 0" xyz="0.0145 -0.006718 -0.006717"/>
   <parent link="FR_1_Motor_1"/>
   <child link="FR_Foot_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rev39" type="continuous">
+<joint name="BL_1" type="continuous">
   <origin rpy="0 0 0" xyz="-0.0145 -0.006718 -0.006717"/>
   <parent link="BL_1_Motor_1"/>
   <child link="BL_Foot_1"/>
   <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="Rigid40" type="fixed">
+<joint name="FR_M_1" type="fixed">
   <origin rpy="0 0 0" xyz="0.0 -0.038537 -0.038537"/>
   <parent link="FR_Dual_Motor_Mount_1"/>
   <child link="FR_1_Motor_1"/>
 </joint>
 
-<joint name="Rev41" type="continuous">
+<joint name="BR_1" type="continuous">
   <origin rpy="0 0 0" xyz="0.0145 -0.006718 -0.006717"/>
   <parent link="BR_1_Motor_1"/>
   <child link="BR_Foot_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rigid42" type="fixed">
+<joint name="BL_M_1" type="fixed">
   <origin rpy="0 0 0" xyz="0.0 -0.038537 -0.038537"/>
   <parent link="BL_Dual_Motor_Mount_1"/>
   <child link="BL_1_Motor_1"/>
 </joint>
 
-<joint name="Rigid43" type="fixed">
+<joint name="FR_M_2" type="fixed">
   <origin rpy="0 0 0" xyz="-0.01525 -0.009193 -0.009193"/>
   <parent link="FR_2_Motor_1"/>
   <child link="FR_Dual_Motor_Mount_1"/>
 </joint>
 
-<joint name="Rev44" type="continuous">
+<joint name="FR_2" type="continuous">
   <origin rpy="0 0 0" xyz="0.075468 0.01565 -0.051319"/>
   <parent link="FR_Top_Bracket_1"/>
   <child link="FR_2_Motor_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Rigid45" type="fixed">
+<joint name="BR_M_1" type="fixed">
   <origin rpy="0 0 0" xyz="0.0 -0.038537 -0.038537"/>
   <parent link="BR_Dual_Motor_Mount_1"/>
   <child link="BR_1_Motor_1"/>
 </joint>
 
-<joint name="Rigid47" type="fixed">
+<joint name="BR_M_2" type="fixed">
   <origin rpy="0 0 0" xyz="-0.01525 -0.009193 -0.009193"/>
   <parent link="BR_2_Motor_1"/>
   <child link="BR_Dual_Motor_Mount_1"/>
 </joint>
 
-<joint name="Rev48" type="continuous">
+<joint name="BR_2" type="continuous">
   <origin rpy="0 0 0" xyz="0.075468 0.01565 -0.051319"/>
   <parent link="BR_Top_Bracket_1"/>
   <child link="BR_2_Motor_1"/>

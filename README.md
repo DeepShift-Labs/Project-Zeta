@@ -29,3 +29,4 @@ I am a robotics hobbyist, enthusiast, and creator. I have been in robotics for t
 I enjoy making and driving robots. I possess a wide variety of skills such as graphic design, robot design, and social media marketing.
 
 #### Lucas:
+I enjoy doing robotics and other engeneering projects as hobbies, I also enjoy learning about computer science and other fields in stem. I have experience in robotics and marketing related skills. 

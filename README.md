@@ -3,9 +3,6 @@
 
 The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. This is possible by using a custom built, biomimetic, robot dog, with tons of sensors for environmental perception. This will be used to train a custom-built Z-Algorithm to develop the intelligence.
 
-
-
-
 ## The Idea
 The plan is to do what I call a "data dump reward strategy". The robot will collect LiDAR, RGBD, audio, tactile, and other sensory data. That data will be fed into 2 Z-Algorithms. There will also be a Kinetic and Cognitive Algorithm. 
 
@@ -23,7 +20,6 @@ The overall point of this project is to make it as open source as possible. My c
 
 Motors: Lewansoul LX-16A; https://www.hiwonder.com/store/learn/26.html; 
 
-
 ## The Team
 
 #### Krishna:
@@ -33,3 +29,4 @@ I am a robotics hobbyist, enthusiast, and creator. I have been in robotics for t
 I enjoy making and driving robots. I possess a wide variety of skills such as graphic design, robot design, and social media marketing.
 
 #### Lucas:
+I enjoy doing robotics and other engeneering projects as hobbies, I also enjoy learning about computer science and other fields in stem. I have experience in robotics and marketing related skills. 

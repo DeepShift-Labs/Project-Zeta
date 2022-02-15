@@ -12,7 +12,7 @@ action priority matricies that can give the predictors a better context. If you 
 ***Please note, these are simply ideas and are due to change.***
 
 ## Setup and Assembly
-All assembly instructions will be provided on the GitHub.io page. The ROS Stack currently requires the "ros-noetic-desktop-full" which has dependencies for around 200 packages. This will only currently work on multi-core PCs and not on Raspberry Pi. This will eventually be optimized to compile on ARM CPUs. 
+All assembly instructions will be provided on the Wiki page. The ROS Stack currently requires the "ros-noetic-desktop-full" which has dependencies for around 200 packages. This will only currently work on multi-core PCs and not on Raspberry Pi. This will eventually be optimized to compile on ARM CPUs. More information will be provided on compilation and setup when the code is functional.
 
 ## Open Source
 The overall point of this project is to make it as open source as possible. My code is open source, the motors I used also provide their code and all the information to recreate them, and my 3D model of the dog will be on Thingiverse soon. 

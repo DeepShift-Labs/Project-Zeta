@@ -37,5 +37,5 @@ I enjoy doing robotics and other engeneering projects as hobbies, I also enjoy l
 
 
 # Links
-OpenCollective: https://opencollective.com/
-Website: https://deepshiftlabs.pythonanywhere.com/
+- OpenCollective: https://opencollective.com/
+- Website: https://deepshiftlabs.pythonanywhere.com/

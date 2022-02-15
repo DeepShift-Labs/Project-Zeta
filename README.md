@@ -1,14 +1,13 @@
 # Project-Zeta
 ***This repository is incomplete and under development. There may be mistakes or missing information. Please bear with it. ANY QUESTIONS YOU HAVE CAN BE ASKED IN THE DISCUSSIONS AND ISSUES. Thank you for cooporating.***
 
-The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. This is possible by using a custom built, biomimetic, robot dog, with tons of sensors for environmental perception. This will be used to train a custom-built Z-Algorithm to develop the intelligence.
+The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. This is possible by using a custom built, biomimetic, robot dog, with tons of sensors for environmental perception. This will be used to train a custom-built multi-agent Z-Algorithm to develop the intelligence.
 
 ## The Idea
-The plan is to do what I call a "data dump reward strategy". The robot will collect LiDAR, RGBD, audio, tactile, and other sensory data. That data will be fed into 2 Z-Algorithms. There will also be a Kinetic and Cognitive Algorithm. 
+The plan is to do what I call a "data dump reward strategy". The robot will collect LiDAR, RGBD, audio, tactile, and other sensory data. That data will be fed into 3 unique algorithms. 
 
-The Kinetic's job is to do motion planning and dynamic obstacle avoidance using an intelligent action matrix. The reward and action matrix will feed into a simple transformer to relate the 4 dimensional data that we are feeding it. 
-
-The Cognitive will use a similar layer heiarchy but instead will look the for the largest change in the pattern and will make a sensor priority matrix.
+Essentially, these algorithms combine to analyze the data and then create predictors to predict a new state of the robot. It will use several weighted data matrices and
+action priority matricies that can give the predictors a better context. If you want to brainstorm ideas and get the latest updates, make a contribution to our OpenCollective! Check the Links section for the link!
 
 ***Please note, these are simply ideas and are due to change.***
 
@@ -30,3 +29,8 @@ I enjoy making and driving robots. I possess a wide variety of skills such as gr
 
 #### Lucas:
 I enjoy doing robotics and other engeneering projects as hobbies, I also enjoy learning about computer science and other fields in stem. I have experience in robotics and marketing related skills. 
+
+
+# Links
+OpenCollective: https://opencollective.com/
+Website: https://deepshiftlabs.pythonanywhere.com/

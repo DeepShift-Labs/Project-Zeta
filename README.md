@@ -17,7 +17,12 @@ All assembly instructions will be provided on the GitHub.io page. The ROS Stack 
 ## Open Source
 The overall point of this project is to make it as open source as possible. My code is open source, the motors I used also provide their code and all the information to recreate them, and my 3D model of the dog will be on Thingiverse soon. 
 
-Motors: Lewansoul LX-16A; https://www.hiwonder.com/store/learn/26.html; 
+Motors: Lewansoul LX-16A; https://www.hiwonder.com/store/learn/26.html; https://www.amazon.com/Hiwonder-LX-16A-Robotic-Controller-Control/dp/B073XY5NT1/ref=sr_1_2?keywords=lx-16a+lewansoul&qid=1644938660&sr=8-2
+Gyroscope: https://www.amazon.com/HiLetgo-MPU-6050-Accelerometer-Gyroscope-Converter/dp/B00LP25V1A/ref=sr_1_1?keywords=MPU-6050&qid=1644938618&sr=8-1
+Arduino: https://store-usa.arduino.cc/collections/most-popular/products/arduino-mega-2560-rev3
+
+### Main Tools
+3D Printer: https://www.amazon.com/LOTMAXX-Certified-Removable-235x235x280mm-9-25x9-25x11-02inch/dp/B081N6CRVP
 
 ## The Team
 

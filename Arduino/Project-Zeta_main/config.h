@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:Arduino/DEPRECATED_Project-Zeta_main/config.h
 // Motor ID definitions
 //FL1 - Front-Left-1
@@ -5,6 +6,9 @@
 =======
 //Define Motor IDs
 >>>>>>> main:Arduino/Project-Zeta_main/config.h
+=======
+//Define Motor IDs
+>>>>>>> main
 #define FL1 4
 #define FL2 5
 #define FL3 6
@@ -17,6 +21,7 @@
 #define BR1 7
 #define BR2 8
 #define BR3 9
+<<<<<<< HEAD
 <<<<<<< HEAD:Arduino/DEPRECATED_Project-Zeta_main/config.h
 //End of  motor ID definitions
 
@@ -31,6 +36,10 @@ const int time = 700; //Time per motor move command
 =======
 //END Define Motor IDs
 
+=======
+//END Define Motor IDs
+
+>>>>>>> main
 //Enable Debug
 #define Debug 1
 

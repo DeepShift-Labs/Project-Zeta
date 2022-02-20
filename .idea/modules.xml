@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Project-Zeta.iml" filepath="$PROJECT_DIR$/.idea/Project-Zeta.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/zeta_ws.iml" filepath="$PROJECT_DIR$/.idea/zeta_ws.iml" />
+>>>>>>> main
     </modules>
   </component>
 </project>

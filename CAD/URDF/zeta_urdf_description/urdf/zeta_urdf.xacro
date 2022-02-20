@@ -1,0 +1,825 @@
+<?xml version="1.0" ?>
+<robot name="zeta_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find zeta_urdf_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find zeta_urdf_description)/urdf/zeta_urdf.trans" />
+<xacro:include filename="$(find zeta_urdf_description)/urdf/zeta_urdf.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.1401781252758202 -0.118893141917001 0.2422521222898727"/>
+    <mass value="0.13102657430451126"/>
+    <inertia ixx="7e-05" ixy="0.0" ixz="-0.0" iyy="0.001452" iyz="-0.0" izz="0.001484"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FL_Foot_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.02549439071336786 0.04407082463626893 -0.05644920428647998"/>
+    <mass value="0.050254366164942214"/>
+    <inertia ixx="4e-05" ixy="0.0" ixz="3.4e-05" iyy="7.1e-05" iyz="-0.0" izz="4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.028563 0.063992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.028563 0.063992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FL_Dual_Motor_Mount_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.018056865966925933 -0.0002371940733614311 -0.017858524296125666"/>
+    <mass value="0.023417593270727483"/>
+    <inertia ixx="1.4e-05" ixy="-0.0" ixz="-8e-06" iyy="2.5e-05" iyz="0.0" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.014063 0.018737 -0.181747"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.014063 0.018737 -0.181747"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FL_Top_Bracket_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.051613573348159025 -0.006427353463747874 -0.011363479103713992"/>
+    <mass value="0.026371988478740775"/>
+    <inertia ixx="2.3e-05" ixy="-0.0" ixz="0.0" iyy="1.1e-05" iyz="4e-06" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.046156 0.025195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.046156 0.025195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FR_Dual_Motor_Mount_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.21789486596692717 -0.16401208976064235 0.018204475703878342"/>
+    <mass value="0.023417593270725956"/>
+    <inertia ixx="1.4e-05" ixy="0.0" ixz="-8e-06" iyy="2.5e-05" iyz="-0.0" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.185775 0.0548 -0.145684"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.185775 0.0548 -0.145684"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FR_Top_Bracket_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.20573257334816109 -0.19661893037031855 0.03995552089628451"/>
+    <mass value="0.02637198847874129"/>
+    <inertia ixx="2.3e-05" ixy="0.0" ixz="0.0" iyy="1.1e-05" iyz="-4e-06" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.200275 0.009545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.200275 0.009545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FR_Top_Bracket_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.13101357334816108 -0.18096893037031855 -0.01136347910371549"/>
+    <mass value="0.02637198847874129"/>
+    <inertia ixx="2.3e-05" ixy="0.0" ixz="0.0" iyy="1.1e-05" iyz="-4e-06" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.125556 0.025195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.125556 0.025195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FR_3_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.12204386002620787 -0.13451697941544447 -1.267045933173172e-07"/>
+    <mass value="0.26893718656206705"/>
+    <inertia ixx="5.9e-05" ixy="0.0" ixz="-0.0" iyy="3.6e-05" iyz="-0.0" izz="6.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.116056 0.010695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.116056 0.010695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pipe_R_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.11492529833407386 -0.0001970368448815374 2.804105647125077e-07"/>
+    <mass value="0.060722328485887364"/>
+    <inertia ixx="5e-06" ixy="0.0" ixz="0.0" iyy="0.00027" iyz="0.0" izz="0.00027"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.256821 0.139278 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/Pipe_R_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.256821 0.139278 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/Pipe_R_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pipe_L_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.11492529833407403 0.00019675301088328823 2.804105649067967e-07"/>
+    <mass value="0.06072232848588741"/>
+    <inertia ixx="5e-06" ixy="0.0" ixz="0.0" iyy="0.00027" iyz="0.0" izz="0.00027"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.256821 0.098508 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/Pipe_L_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.256821 0.098508 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/Pipe_L_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BR_Foot_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.4743436092866339 0.11712689152973316 -0.056449204286474916"/>
+    <mass value="0.05025436616494205"/>
+    <inertia ixx="4e-05" ixy="-0.0" ixz="3.4e-05" iyy="7.1e-05" iyz="0.0" izz="4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.200275 0.334992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.200275 0.334992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BR_Top_Bracket_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.4767325733482387 0.07438106962968674 0.039955520896285984"/>
+    <mass value="0.026371988478740113"/>
+    <inertia ixx="2.3e-05" ixy="0.0" ixz="0.0" iyy="1.1e-05" iyz="-4e-06" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.200275 0.280545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.200275 0.280545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BR_3_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.39304386002590064 0.1364830205845584 -1.26704591957294e-07"/>
+    <mass value="0.26893718656206766"/>
+    <inertia ixx="5.9e-05" ixy="0.0" ixz="-0.0" iyy="3.6e-05" iyz="-0.0" izz="6.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.116056 0.281695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.116056 0.281695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BL_3_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.332643860025899 0.18912069558170688 -1.267045924013832e-07"/>
+    <mass value="0.26893718656206744"/>
+    <inertia ixx="5.9e-05" ixy="-0.0" ixz="-0.0" iyy="3.6e-05" iyz="0.0" izz="6.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.055656 0.281695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.055656 0.281695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BR_Top_Bracket_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.4020135733482387 0.09003106962968674 -0.01136347910371402"/>
+    <mass value="0.026371988478740113"/>
+    <inertia ixx="2.3e-05" ixy="0.0" ixz="0.0" iyy="1.1e-05" iyz="-4e-06" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.125556 0.296195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.125556 0.296195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BL_Dual_Motor_Mount_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.28923131284171366 0.30682580592664116 0.018031721419974278"/>
+    <mass value="0.02330043804692393"/>
+    <inertia ixx="1.4e-05" ixy="0.0" ixz="-8e-06" iyy="2.5e-05" iyz="-0.0" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.014063 0.3258 -0.145684"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.014063 0.3258 -0.145684"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BL_Dual_Motor_Mount_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.28923131284171366 0.2707628059266412 -0.018031278580025706"/>
+    <mass value="0.02330043804692393"/>
+    <inertia ixx="1.4e-05" ixy="0.0" ixz="-8e-06" iyy="2.5e-05" iyz="-0.0" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.014063 0.289737 -0.181747"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.014063 0.289737 -0.181747"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BL_Top_Bracket_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.3226135733482379 0.2645726465362549 -0.011363479103713187"/>
+    <mass value="0.02637198847874093"/>
+    <inertia ixx="2.3e-05" ixy="-0.0" ixz="0.0" iyy="1.1e-05" iyz="4e-06" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.046156 0.296195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.046156 0.296195 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Top_Bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FL_2_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.014780675362816586 -0.009662035713151324 -0.009461866122396412"/>
+    <mass value="0.26893718656110227"/>
+    <inertia ixx="5.2e-05" ixy="0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.029313 0.009545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.029313 0.009545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FL_1_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.03599330104623686 0.038067964286848804 0.002744308963336134"/>
+    <mass value="0.26893718656110227"/>
+    <inertia ixx="5.2e-05" ixy="-0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="-0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.014063 0.057275 -0.14321"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.014063 0.057275 -0.14321"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FL_3_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.061643860026207295 -0.08187930441829591 -1.267045930952726e-07"/>
+    <mass value="0.2689371865620667"/>
+    <inertia ixx="5.9e-05" ixy="-0.0" ixz="-0.0" iyy="3.6e-05" iyz="0.0" izz="6.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.055656 0.010695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.055656 0.010695 -0.242258"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FL_3_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FR_1_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.2510813010461652 -0.15458724812064864 0.009462308962735255"/>
+    <mass value="0.2689371865622305"/>
+    <inertia ixx="5.2e-05" ixy="0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.201025 0.063992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.201025 0.063992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FR_2_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.2003073246372629 -0.2023172481206489 -0.0027448661231496696"/>
+    <mass value="0.2689371865622293"/>
+    <inertia ixx="5.2e-05" ixy="-0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="-0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.185775 0.016262 -0.184222"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.185775 0.016262 -0.184222"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BR_1_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.5068313010458545 0.10969575187935385 0.002744308962740194"/>
+    <mass value="0.2689371865622303"/>
+    <inertia ixx="5.2e-05" ixy="0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.185775 0.328275 -0.14321"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.185775 0.328275 -0.14321"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BR_2_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.4713073246369538 0.06868275187935313 -0.002744866123148587"/>
+    <mass value="0.268937186562229"/>
+    <inertia ixx="5.2e-05" ixy="-0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="-0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.185775 0.287262 -0.184222"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.185775 0.287262 -0.184222"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BL_1_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.2917433010470618 0.31578496428685143 0.009462308963337218"/>
+    <mass value="0.26893718656110244"/>
+    <inertia ixx="5.2e-05" ixy="-0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="-0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.029313 0.334992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.029313 0.334992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_1_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BL_2_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.2562193246380079 0.26133796428685124 -0.009461866122395357"/>
+    <mass value="0.2689371865611023"/>
+    <inertia ixx="5.2e-05" ixy="0.0" ixz="-1.6e-05" iyy="5.9e-05" iyz="0.0" izz="5.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.029313 0.280545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.029313 0.280545 -0.190939"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_2_Motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FR_Foot_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.20334360928663398 -0.1538731084702695 -0.05644920428647998"/>
+    <mass value="0.05025436616494203"/>
+    <inertia ixx="4e-05" ixy="-0.0" ixz="3.4e-05" iyy="7.1e-05" iyz="0.0" izz="4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.200275 0.063992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.200275 0.063992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/FR_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BR_Dual_Motor_Mount_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.4890693128417123 0.10698791023936435 0.018031721419974417"/>
+    <mass value="0.02330043804691809"/>
+    <inertia ixx="1.4e-05" ixy="-0.0" ixz="-8e-06" iyy="2.5e-05" iyz="0.0" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.185775 0.3258 -0.145684"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.185775 0.3258 -0.145684"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BR_Dual_Motor_Mount_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BL_Foot_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.2455056092866328 0.3150708246362716 -0.05644920428647855"/>
+    <mass value="0.05025436616494222"/>
+    <inertia ixx="4e-05" ixy="0.0" ixz="3.4e-05" iyy="7.1e-05" iyz="-0.0" izz="4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.028563 0.334992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.028563 0.334992 -0.136492"/>
+    <geometry>
+      <mesh filename="package://zeta_urdf_description/meshes/BL_Foot_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev1" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0145 -0.006717 -0.006718"/>
+  <parent link="FL_1_Motor_1"/>
+  <child link="FL_Foot_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Rigid3" type="fixed">
+  <origin rpy="0 0 0" xyz="0.01525 -0.009192 -0.009192"/>
+  <parent link="FL_2_Motor_1"/>
+  <child link="FL_Dual_Motor_Mount_1"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0095 -0.0145 0.0"/>
+  <parent link="FL_3_Motor_1"/>
+  <child link="FL_Top_Bracket_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Rigid8" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.01525 0.009192 0.009192"/>
+  <parent link="FR_1_Motor_1"/>
+  <child link="FR_Dual_Motor_Mount_1"/>
+</joint>
+
+<joint name="Rev10" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.060219 -0.008933 0.058036"/>
+  <parent link="FR_2_Motor_1"/>
+  <child link="FR_Top_Bracket_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rev11" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0095 -0.0145 0.0"/>
+  <parent link="FR_3_Motor_1"/>
+  <child link="FR_Top_Bracket_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid12" type="fixed">
+  <origin rpy="0 0 0" xyz="0.116056 -0.010695 0.242258"/>
+  <parent link="base_link"/>
+  <child link="FR_3_Motor_1"/>
+</joint>
+
+<joint name="Rigid13" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.256821 -0.139278 0.242258"/>
+  <parent link="base_link"/>
+  <child link="Pipe_R_1"/>
+</joint>
+
+<joint name="Rigid14" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.256821 -0.098508 0.242258"/>
+  <parent link="base_link"/>
+  <child link="Pipe_L_1"/>
+</joint>
+
+<joint name="Rev17" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0145 -0.006717 -0.006718"/>
+  <parent link="BR_1_Motor_1"/>
+  <child link="BR_Foot_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rev18" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.060219 -0.008933 0.058036"/>
+  <parent link="BR_2_Motor_1"/>
+  <child link="BR_Top_Bracket_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rigid19" type="fixed">
+  <origin rpy="0 0 0" xyz="0.116056 -0.281695 0.242258"/>
+  <parent link="base_link"/>
+  <child link="BR_3_Motor_1"/>
+</joint>
+
+<joint name="Rigid20" type="fixed">
+  <origin rpy="0 0 0" xyz="0.055656 -0.281695 0.242258"/>
+  <parent link="base_link"/>
+  <child link="BL_3_Motor_1"/>
+</joint>
+
+<joint name="Rev21" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0095 -0.0145 0.0"/>
+  <parent link="BR_3_Motor_1"/>
+  <child link="BR_Top_Bracket_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid24" type="fixed">
+  <origin rpy="0 0 0" xyz="0.01525 0.045255 0.045255"/>
+  <parent link="BL_1_Motor_1"/>
+  <child link="BL_Dual_Motor_Mount_1"/>
+</joint>
+
+<joint name="Rigid25" type="fixed">
+  <origin rpy="0 0 0" xyz="0.01525 -0.009192 -0.009192"/>
+  <parent link="BL_2_Motor_1"/>
+  <child link="BL_Dual_Motor_Mount_1"/>
+</joint>
+
+<joint name="Rev26" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0095 -0.0145 0.0"/>
+  <parent link="BL_3_Motor_1"/>
+  <child link="BL_Top_Bracket_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Rev27" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.075469 0.01565 -0.051319"/>
+  <parent link="FL_Top_Bracket_1"/>
+  <child link="FL_2_Motor_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rigid28" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.038538 -0.038537"/>
+  <parent link="FL_Dual_Motor_Mount_1"/>
+  <child link="FL_1_Motor_1"/>
+</joint>
+
+<joint name="Rigid29" type="fixed">
+  <origin rpy="0 0 0" xyz="0.055656 -0.010695 0.242258"/>
+  <parent link="base_link"/>
+  <child link="FL_3_Motor_1"/>
+</joint>
+
+<joint name="Rev30" type="continuous">
+  <origin rpy="0 0 0" xyz="0.00075 0.0 0.0"/>
+  <parent link="FR_Foot_1"/>
+  <child link="FR_1_Motor_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rigid31" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.038538 0.038538"/>
+  <parent link="FR_Dual_Motor_Mount_1"/>
+  <child link="FR_2_Motor_1"/>
+</joint>
+
+<joint name="Rigid32" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.002475 -0.002474"/>
+  <parent link="BR_Dual_Motor_Mount_1"/>
+  <child link="BR_1_Motor_1"/>
+</joint>
+
+<joint name="Rigid33" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.038538 0.038538"/>
+  <parent link="BR_Dual_Motor_Mount_1"/>
+  <child link="BR_2_Motor_1"/>
+</joint>
+
+<joint name="Rev34" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.00075 0.0 0.0"/>
+  <parent link="BL_Foot_1"/>
+  <child link="BL_1_Motor_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Rev35" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.075469 0.01565 -0.051319"/>
+  <parent link="BL_Top_Bracket_1"/>
+  <child link="BL_2_Motor_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Rev37" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.00075 0.0 0.0"/>
+  <parent link="FR_1_Motor_1"/>
+  <child link="FR_Foot_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rigid38" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.002475 0.002474"/>
+  <parent link="BR_1_Motor_1"/>
+  <child link="BR_Dual_Motor_Mount_1"/>
+</joint>
+
+<joint name="Rev39" type="continuous">
+  <origin rpy="0 0 0" xyz="0.00075 0.0 0.0"/>
+  <parent link="BL_1_Motor_1"/>
+  <child link="BL_Foot_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+</robot>

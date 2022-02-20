@@ -4,19 +4,46 @@
 #include "inverse_kinematics.h"
 #include "dances.h"
 
+IK_out ik;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(57600);
   Serial1.begin(9600);
 
-    IK_out ik = IK_Solver(0, 0, 15);
-    Serial.println(radToDeg(ik.m1));
-    Serial.println(radToDeg(ik.m2));
+
+  //  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, 45), time);
   //  Serial.println(pow(2, 3));
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+
+  //  ik = IK_Solver(0, 0, 18);
+  //  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
+  //  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
+  //
+  //  delay(time + 50);
+  //
+  //  ik = IK_Solver(0, 0, 13);
+  //  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
+  //  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
+  //
+  //  delay(time + 50);
+
+
+
+  ik = IK_Solver(0, -6, 18);
+  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
+
+  delay(time + 50);
+
+  ik = IK_Solver(0, 6, 13);
+  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
+
+  delay(time + 50);
 
   //  runMotorNormalizeInverse(FL1, 500, time);
   //  runMotorNormalizeInverse(FL2, 646, time);

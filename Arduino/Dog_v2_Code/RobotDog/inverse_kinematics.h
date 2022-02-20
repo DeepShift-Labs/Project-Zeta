@@ -3,6 +3,8 @@ struct IK_out {
 };
 
 IK_out IK_Solver(float x, float y, float z){
+  y = y * -1;
+
   float z_alt = sqrt(sq(y)+sq(z));
 
   

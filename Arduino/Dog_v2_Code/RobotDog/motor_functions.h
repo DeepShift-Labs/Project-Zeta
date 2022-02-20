@@ -37,6 +37,7 @@ int normalize_inverse(int motor_id, int position) {
 }
 
 void runMotorNormalizeInverse(int motor_id, int position, int time) {
+//  position = int(position);
   Controller.moveServo(motor_id, normalize_inverse(motor_id, position), time);
 }
 

@@ -16,5 +16,7 @@ IK_out IK_Solver(float x, float y, float z){
   double mid_angle = atan(y/z);
   double final_theta_upper = PI-(PI/2)-theta_upper-mid_angle;
 
-  return {theta_lower, final_theta_upper, 1};
+  double theta_joint_3 = (PI/2) - atan(x/z);
+
+  return {theta_lower, final_theta_upper, theta_joint_3};
 }

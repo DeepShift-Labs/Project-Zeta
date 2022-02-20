@@ -63,7 +63,7 @@ int degToMotorPos(int motor_id, double angle) {
   }
   if (motor_id == FL3 || motor_id == FR3 || motor_id == BL3 || motor_id == BR3) {
     if (angle > 90) {
-      pos = 500 - (abs(angle - 90) * DEGREE);
+      pos = 500 + (abs(angle - 90) * DEGREE);
     }
     else if (angle < 90) {
       pos = 500 - (abs(angle - 90) * DEGREE);

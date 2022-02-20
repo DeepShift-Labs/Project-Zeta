@@ -1,0 +1,21 @@
+2022-02-05 21:50:56,313 [INFO] root Logger Instantiated
+2022-02-05 21:50:56,314 [INFO] root Main    : before creating thread
+2022-02-05 21:50:56,314 [INFO] root Main    : before running thread
+2022-02-05 21:50:56,314 [INFO] root Thread 1: starting
+2022-02-05 21:50:56,314 [INFO] root Main    : wait for the thread to finish
+2022-02-05 21:50:56,314 [INFO] root Main    : all done
+2022-02-05 21:50:58,315 [INFO] root Thread 1: finishing
+2022-02-05 21:51:09,200 [INFO] root Logger Instantiated
+2022-02-05 21:51:09,200 [INFO] root Main    : before creating thread
+2022-02-05 21:51:09,200 [INFO] root Main    : before running thread
+2022-02-05 21:51:09,200 [INFO] root Thread 1: starting
+2022-02-05 21:51:09,200 [INFO] root Main    : wait for the thread to finish
+2022-02-05 21:51:09,200 [INFO] root Main    : all done
+2022-02-05 21:51:11,202 [INFO] root Thread 1: finishing
+2022-02-05 21:53:11,603 [INFO] root Logger Instantiated
+2022-02-05 21:53:11,603 [INFO] root Main    : before creating thread
+2022-02-05 21:53:11,603 [INFO] root Main    : before running thread
+2022-02-05 21:53:11,603 [INFO] root Thread 1: starting
+2022-02-05 21:53:11,603 [INFO] root Main    : wait for the thread to finish
+2022-02-05 21:53:11,603 [INFO] root Main    : all done
+2022-02-05 21:53:13,604 [INFO] root Thread 1: finishing

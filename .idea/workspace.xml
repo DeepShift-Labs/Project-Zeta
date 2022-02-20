@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1cf5b7d9-a7a6-4424-81b7-624e47967868" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ZetaAI.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/DataGeneration/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/DataGeneration/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/Logger/CallLogger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/Logger/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/ThreadManager/BasicThreader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/ThreadManager/CallLogger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/ThreadManager/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/main_ai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project-Zeta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project-Zeta.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Arduino/Project-Zeta_main/config.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Arduino/Project-Zeta_main/functions.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22QzEsGP0cM6qmqM5bn5sdCM2FA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/ThreadManager" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.BasicThreader">
+    <configuration name="BasicThreader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project-Zeta" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/ThreadManager" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/ThreadManager/BasicThreader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CallLogger" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project-Zeta" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/Logger" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/Logger/CallLogger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.BasicThreader" />
+        <item itemvalue="Python.CallLogger" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cf5b7d9-a7a6-4424-81b7-624e47967868" name="Changes" comment="" />
+      <created>1639784491144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639784491144</updated>
+      <workItem from="1639784494862" duration="846000" />
+      <workItem from="1640278317297" duration="704000" />
+      <workItem from="1643943910988" duration="1500000" />
+      <workItem from="1644002769790" duration="1530000" />
+      <workItem from="1644012775993" duration="600000" />
+      <workItem from="1644083790576" duration="17000" />
+      <workItem from="1644111797223" duration="6716000" />
+      <workItem from="1644790417834" duration="600000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Project_Zeta$ZetaAI.coverage" NAME="ZetaAI Coverage Results" MODIFIED="1644115214694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine" />
+    <SUITE FILE_PATH="coverage/Project_Zeta$BasicThreader.coverage" NAME="BasicThreader Coverage Results" MODIFIED="1644119591553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/ThreadManager" />
+    <SUITE FILE_PATH="coverage/Project_Zeta$CallLogger.coverage" NAME="CallLogger Coverage Results" MODIFIED="1644117970950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ROS_Stack/src/Computing/ai_compute_engine/Logger" />
+  </component>
+</project>

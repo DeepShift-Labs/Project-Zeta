@@ -25,6 +25,7 @@ int normalize_inverse(int motor_id, int position) {
       final_position = map(position, 0, 1000, 1000, 0);
       break;
     case FR3:
+      final_position = final_position - 50;
       break;
     case BL3:
       break;

@@ -1,6 +1,8 @@
 logs/
 .catkin_tools/
-
+.idea/
+.git/
+.github/
 devel/
 logs/
 build/

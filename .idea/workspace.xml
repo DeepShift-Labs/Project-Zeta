@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a550a38-0d0e-44b2-a845-ccd5e922c70b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project-Zeta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project-Zeta.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/ROS_Build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/ZetaAI.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/zeta_ws.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arduino/Dog_v2_Code/RobotDog/RobotDog.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Arduino/Dog_v2_Code/RobotDog/RobotDog.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ROS_Stack/src/Computing/inverse_kinematics_solver/src/cartesian_kinematic_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/ROS_Stack/src/Computing/inverse_kinematics_solver/src/cartesian_kinematic_server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645410945418</updated>
       <workItem from="1645410951365" duration="3844000" />
+      <workItem from="1645498540780" duration="2081000" />
     </task>
     <servers />
   </component>

@@ -22,7 +22,7 @@ LobotServoController Controller(Serial1); // Create Servo Controller Object
 float upper_leg_length = 8; //Leg length in cm for IK
 float lower_leg_length = 13; //Leg length in cm for IK
 
-const int time = 800; //Time per motor move command
+const int time = 400; //Time per motor move command
 
 //MAX Definitions
 const int motor_1_MIN = 320;

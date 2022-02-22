@@ -31,22 +31,22 @@ void setup() {
 
 
 
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(BL1, degToMotorPos(BL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BL2, degToMotorPos(BL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
@@ -55,17 +55,7 @@ void setup() {
 
 
 
-  ik = IK_Solver(0, 6, 10);
-  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
-
-  runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
-  delay(time + 50);
-
-  ik = IK_Solver(0, 6, 15);
+  ik = IK_Solver(0, 9, 13);
   runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
@@ -75,24 +65,34 @@ void setup() {
   runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
   delay(time + 50);
 
-
-
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 9, 15);
   runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
+  runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
+  delay(time + 50);
+
+
+
+  ik = IK_Solver(0, 3, 15);
+  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
+  runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
+
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(BL1, degToMotorPos(BL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BL2, degToMotorPos(BL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
@@ -105,7 +105,7 @@ void setup() {
 
 
 
-  ik = IK_Solver(0, 6, 10);
+  ik = IK_Solver(0, 9, 13);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
@@ -115,7 +115,7 @@ void setup() {
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
   delay(time + 50);
 
-  ik = IK_Solver(0, 6, 15);
+  ik = IK_Solver(0, 9, 15);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
@@ -125,22 +125,26 @@ void setup() {
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
   delay(time + 50);
 
-  ik = IK_Solver(0, -6, 15);
+
+
+
+
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(BL1, degToMotorPos(BL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BL2, degToMotorPos(BL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
@@ -148,67 +152,44 @@ void setup() {
 }
 
 void loop() {
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 9, 13);
   runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, 0, 15);
+  runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
+  runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
+  delay(time + 50);
+
+  ik = IK_Solver(0, 9, 15);
+  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
+  runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
+
+  runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
+  runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
+  delay(time + 50);
+
+
+
+  ik = IK_Solver(0, 3, 15);
+  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
+  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
+  runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
+
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(BL1, degToMotorPos(BL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BL2, degToMotorPos(BL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, 0, 15);
-  runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
-  delay(time + 50);
-
-
-
-  ik = IK_Solver(0, 6, 10);
-  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
-
-  runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
-  delay(time + 50);
-
-  ik = IK_Solver(0, 6, 15);
-  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
-
-  runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
-  delay(time + 50);
-
-
-
-  ik = IK_Solver(0, 0, 15);
-  runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
-
-  ik = IK_Solver(0, -6, 15);
-  runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
-
-  ik = IK_Solver(0, -6, 15);
-  runMotorNormalizeInverse(BL1, degToMotorPos(BL1, radToDeg(ik.m1)), time);
-  runMotorNormalizeInverse(BL2, degToMotorPos(BL2, radToDeg(ik.m2)), time);
-  runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
-
-  ik = IK_Solver(0, 0, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);
@@ -221,7 +202,7 @@ void loop() {
 
 
 
-  ik = IK_Solver(0, 6, 10);
+  ik = IK_Solver(0, 9, 13);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
@@ -231,7 +212,7 @@ void loop() {
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
   delay(time + 50);
 
-  ik = IK_Solver(0, 6, 15);
+  ik = IK_Solver(0, 9, 15);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
@@ -241,22 +222,26 @@ void loop() {
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
   delay(time + 50);
 
-  ik = IK_Solver(0, -6, 15);
+
+
+
+
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(FL1, degToMotorPos(FL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FL2, degToMotorPos(FL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FL3, degToMotorPos(FL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(FR1, degToMotorPos(FR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(FR2, degToMotorPos(FR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(FR3, degToMotorPos(FR3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  ik = IK_Solver(0, 3, 15);
   runMotorNormalizeInverse(BL1, degToMotorPos(BL1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BL2, degToMotorPos(BL2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BL3, degToMotorPos(BL3, radToDeg(ik.m3)), time);
 
-  ik = IK_Solver(0, -6, 15);
+  ik = IK_Solver(0, -3, 15);
   runMotorNormalizeInverse(BR1, degToMotorPos(BR1, radToDeg(ik.m1)), time);
   runMotorNormalizeInverse(BR2, degToMotorPos(BR2, radToDeg(ik.m2)), time);
   runMotorNormalizeInverse(BR3, degToMotorPos(BR3, radToDeg(ik.m3)), time);

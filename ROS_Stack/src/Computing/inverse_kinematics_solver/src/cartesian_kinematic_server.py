@@ -33,38 +33,35 @@ def radToDeg(rad):
 def normalize_inverse(motor_id, position):
     final_position = position
     break_val = 0
-    match motor_id:
-        case FL1:
-            break_val = 1
-        case FR1:
-            break_val = 1
-        case BL1:
-            break_val = 1
-        case BR1:
-            final_position = map(position, 0, 1000, 1000, 0)
-            break_val = 1
-
-        case FL2:
-            break_val = 1
-        case FR2:
-            break_val = 1
-        case BL2:
-            break_val = 1
-        case BR2:
-            final_position = map(position, 0, 1000, 1000, 0)
-            break_val = 1
-
-        case FL3:
-            final_position = map(position, 0, 1000, 1000, 0)
-            break_val = 1
-        case FR3:
-            final_position = final_position - 50
-            break_val = 1
-        case BL3:
-            break_val = 1
-        case BR3:
-            final_position = map(position, 0, 1000, 1000, 0)
-            break_val = 1
+    if FL1:
+        break_val = 1
+    if FR1:
+        break_val = 1
+    if BL1:
+        break_val = 1
+    if BR1:
+        final_position = map(position, 0, 1000, 1000, 0)
+        break_val = 1
+    if FL2:
+        break_val = 1
+    if FR2:
+        break_val = 1
+    if BL2:
+        break_val = 1
+    if BR2:
+        final_position = map(position, 0, 1000, 1000, 0)
+        break_val = 1
+    if FL3:
+        final_position = map(position, 0, 1000, 1000, 0)
+        break_val = 1
+    if FR3:
+        final_position = final_position - 50
+        break_val = 1
+    if BL3:
+        break_val = 1
+    if BR3:
+        final_position = map(position, 0, 1000, 1000, 0)
+        break_val = 1
     return final_position
 
 
@@ -119,15 +116,16 @@ def IK_Solver(x, y, z):
 
 def handle_cartesian_kinematic_solver(req):
     print("Returning [%s, %s, %s, %s]" % (req.x, req.y, req.z, req.motor_id))
-    return CartesianKinematicSolverResponse(1, 2, 3)
+    a, b, c = IK_Solver(req.x, req.y, req.z)
+    return CartesianKinematicSolverResponse(a, b, c)
 
 
 def inverse_kinematics_server():
     rospy.init_node('cartesian_kinematic_server')
     s = rospy.Service('cartesian_kinematic_server', CartesianKinematicSolver, handle_cartesian_kinematic_solver)
     print("Ready to compute kinematics.")
-    rospy.smath.pin()
-
+    #rospy.smath.pin()
+    rospy.spin()
 
 if __name__ == "__main__":
     inverse_kinematics_server()

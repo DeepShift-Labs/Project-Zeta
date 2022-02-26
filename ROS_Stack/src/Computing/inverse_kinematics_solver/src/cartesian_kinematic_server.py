@@ -115,8 +115,9 @@ def IK_Solver(x, y, z):
 
 
 def handle_cartesian_kinematic_solver(req):
-    print("Returning [%s, %s, %s, %s]" % (req.x, req.y, req.z, req.motor_id))
+    #print("Returning [%s, %s, %s, %s]" % (req.x, req.y, req.z, req.motor_id))
     a, b, c = IK_Solver(req.x, req.y, req.z)
+    print("Returning [%s, %s, %s, %s]" % (req.x, req.y, req.z, req.motor_id))
     return CartesianKinematicSolverResponse(a, b, c)
 
 

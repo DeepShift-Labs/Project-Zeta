@@ -3,6 +3,6 @@ float64 y
 float64 z
 int64 motor_id
 ---
-int64 angle_1
-int64 angle_2
-int64 angle_3
+float64 angle_1
+float64 angle_2
+float64 angle_3

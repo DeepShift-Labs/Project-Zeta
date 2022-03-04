@@ -2,8 +2,8 @@ import sys, time
 import serial
 import lewansoul_lx16a
 
-#SERIAL_PORT = '/dev/ttyUSB0'    # For Linux
-SERIAL_PORT = 'COM3'            # For Windows (find port in Device Manager -> Ports)
+SERIAL_PORT = '/dev/motor_controller'    # For Linux
+#SERIAL_PORT = 'COM3'            # For Windows (find port in Device Manager -> Ports)
 
 ctrl = lewansoul_lx16a.ServoController(
     serial.Serial(SERIAL_PORT, 115200, timeout=1),

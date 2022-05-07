@@ -13,7 +13,7 @@ ctrl = lewansoul_lx16a.ServoController(
     serial.Serial(SERIAL_PORT, 115200, timeout=1),
 )
 
-timez = 800
+timez = 1000
 
 def servo_info(id):
     print("Servo id: {}".format(id))
@@ -37,211 +37,148 @@ def conv_ik(id, x, y, z):
 
 
 if __name__ == '__main__':
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
+	ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
+	ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
+	
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
+	ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
+	ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
+	
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
+	ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
+	ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
+	
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
+	ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
+	ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
 
-    time.sleep((timez/1000) + 0.05)
-    
-    
-    ik = IK_Solver(0, 4, 11)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 4, 11)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
+	time.sleep((timez/1000) + 3.05)
 
-    time.sleep((timez/1000) + 0.05)
-    
-    
-    ik = IK_Solver(0, 8, 15)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 8, 15)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
 
-    time.sleep((timez/1000) + 0.05)
-    
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
+	for i in range(3):
+		ik = IK_Solver(0, 2, 10)
+		ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
+		ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
+		ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
+		ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
+		ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
+		
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
+		ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
+		ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, 2, 10)
+		ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
+		ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
+		ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
 
-    time.sleep(((timez/1000)/2) + 0.05)
-    
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -8, 14)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -8, 14)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
-    
-    time.sleep((timez/1000) + 0.05)
-    
-    
-    #///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 4, 11)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 4, 11)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
+		time.sleep((timez/1000) + 0.05)
+		
+		
+		ik = IK_Solver(0, 4, 15)
+		ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
+		ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
+		ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
+		ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
+		ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
+		
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
+		ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
+		ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, 4, 15)
+		ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
+		ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
+		ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
 
-    time.sleep((timez/1000) + 0.05)
+		time.sleep((timez/1000) + 0.05)
+		
+		
+		
+		
+		
     
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 8, 15)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 8, 15)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
+		ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
+		ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, 2, 10)
+		ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
+		ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
+		ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
+		
+		ik = IK_Solver(0, 2, 10)
+		ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
+		ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
+		ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
+		ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
+		ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
 
-    time.sleep((timez/1000) + 0.05)
-    
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, 0, 14)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
+		time.sleep((timez/1000) + 0.05)
+		
+		
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
+		ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
+		ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, 4, 15)
+		ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
+		ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
+		ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
+		
+		ik = IK_Solver(0, 4, 15)
+		ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
+		ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
+		ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
+		
+		ik = IK_Solver(0, -4, 14)
+		ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
+		ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
+		ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
 
-    time.sleep(((timez/1000)/2) + 0.05)
+		time.sleep((timez/1000) + 0.05)
+		
+		
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
+	ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
+	ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
+	
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
+	ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
+	ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
+	
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
+	ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
+	ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
+	
+	ik = IK_Solver(0, 0, 14)
+	ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
+	ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
+	ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
+
+	time.sleep((timez/1000) + 0.05)
     
     
-    ik = IK_Solver(0, -8, 14)
-    ctrl.move(FL1, convert_values(FL1, ik[0]), timez)
-    ctrl.move(FL2, convert_values(FL2, ik[1]), timez)
-    ctrl.move(FL3, convert_values(FL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(FR1, convert_values(FR1, ik[0]), timez)
-    ctrl.move(FR2, convert_values(FR2, ik[1]), timez)
-    ctrl.move(FR3, convert_values(FR3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -2, 14)
-    ctrl.move(BL1, convert_values(BL1, ik[0]), timez)
-    ctrl.move(BL2, convert_values(BL2, ik[1]), timez)
-    ctrl.move(BL3, convert_values(BL3, ik[2]), timez)
-    
-    ik = IK_Solver(0, -8, 14)
-    ctrl.move(BR1, convert_values(BR1, ik[0]), timez)
-    ctrl.move(BR2, convert_values(BR2, ik[1]), timez)
-    ctrl.move(BR3, convert_values(BR3, ik[2]), timez)
-    
-    time.sleep((timez/1000) + 0.05)
+  
+ 

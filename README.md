@@ -1,10 +1,13 @@
 # Project-Zeta
+![Github BannerZeta](https://user-images.githubusercontent.com/85193239/174832439-0dc427f8-54c8-49fe-9055-6bef1d39f150.png)
+
 ***This repository is incomplete and under development. There may be mistakes or missing information. Please bear with it. ANY QUESTIONS YOU HAVE CAN BE ASKED IN THE DISCUSSIONS AND ISSUES. Thank you for cooporating.***
 
-The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. This is possible by using a custom built, biomimetic, robot dog, with tons of sensors for environmental perception. To learn more about the AI itself, look at this repo TODO.
+The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. This is possible by using a custom built, biomimetic, robot dog, with tons of sensors for environmental perception. To learn more about the AI itself, look at this repo:
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DeepShift-Labs&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
 
 ## The Idea
-We are making a versatile and cost-effective development platfom to collect data. This will allow us to not only collect data but also impement the general intelligence into the robot. If you want to brainstorm ideas with us and get the latest updates, make a contribution to our OpenCollective! Check the Links section for the link!
+We are making a versatile and cost-effective development platfom to collect data. This will allow us to not only collect data but also impement the general intelligence into the robot. In fact, our project MAGIST has achieved General Intelligence! [Check out our other repositories to learn more.](https://github.com/DeepShift-Labs) If you want to brainstorm ideas with us and get the latest updates, make a contribution to our OpenCollective! Check the Links section for the link!
 
 ## Setup and Assembly
 All assembly instructions will be provided on the Wiki page. The ROS Stack currently requires the "ros-noetic-desktop-full" which has dependencies for around 200 packages. This will only currently work on multi-core PCs and not on Raspberry Pi. This will eventually be optimized to compile on ARM CPUs. More information will be provided on compilation and setup when the code is functional.
@@ -26,6 +29,8 @@ The overall point of this project is to make it as open source as possible. My c
 #### Krishna:
 I am a robotics hobbyist, enthusiast, and creator. I have been in robotics for the past 6 years and I have experience in various fields of study. I have tremendous experience in Python, C, Tensorflow, ROS, as well as electronics, 3D Printing, and much more.
 
+## Our AI Project: MAGIST
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DeepShift-Labs&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
 
 # Links
 - OpenCollective: https://opencollective.com/deepshift-labs

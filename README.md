@@ -28,6 +28,7 @@ I am a robotics hobbyist, enthusiast, and creator. I have been in robotics for t
 
 
 # Links
-- OpenCollective: https://opencollective.com/
-- Website: https://deepshiftlabs.pythonanywhere.com/
-- Medium: https://dragonflyrobotics.medium.com/
+- OpenCollective: https://opencollective.com/deepshift-labs
+- Website: https://deepshift.dev
+- Medium: https://deepshiftlabs.medium.com/
+- YouTube: https://www.youtube.com/channel/UC6nu2aGbAEX3yy5b0W9GBIg

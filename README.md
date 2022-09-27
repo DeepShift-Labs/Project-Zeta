@@ -4,7 +4,7 @@
 ***This repository is incomplete and under development. There may be mistakes or missing information. Please bear with it. ANY QUESTIONS YOU HAVE CAN BE ASKED IN THE DISCUSSIONS AND ISSUES. Thank you for cooperating.***
 
 The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. This is possible by using a custom-built, biomimetic, robot dog, with tons of sensors for environmental perception. To learn more about the AI itself, look at this repo:
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DeepShift-Labs&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DeepShift-Labs&theme=cobalt&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
 
 ## The Idea
 We are making a versatile and cost-effective development platform to collect data. This will allow us to not only collect data but also implement the general intelligence into the robot. In fact, our project MAGIST has achieved General Intelligence! [Check out our other repositories to learn more.](https://github.com/DeepShift-Labs) If you want to brainstorm ideas with us and get the latest updates, make a contribution to our OpenCollective! Check the Links section for the link!
@@ -36,7 +36,7 @@ I enjoy making and driving robots. I possess a wide variety of skills such as gr
 I enjoy doing robotics and other engeneering projects as hobbies, I also enjoy learning about computer science and other fields in stem. I have experience in robotics and marketing related skills. 
 
 ## Our AI Project: MAGIST
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DeepShift-Labs&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DeepShift-Labs&theme=cobalt&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
 
 # Links
 - OpenCollective: https://opencollective.com/deepshift-labs

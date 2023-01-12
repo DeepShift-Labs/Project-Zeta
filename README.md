@@ -30,7 +30,7 @@ The overall point of this project is to make it as open-source as possible. My c
 I am a robotics hobbyist, enthusiast, and creator. I have been in robotics for the past 6 years and I have experience in various fields of study. I have tremendous experience in Python, C, Tensorflow, ROS, as well as electronics, 3D Printing, and much more.
 
 ## Our AI Project: MAGIST
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=DeepShift-Labs&theme=cobalt&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
+[![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=DeepShift-Labs&theme=cobalt&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
 
 # Links
 - OpenCollective: https://opencollective.com/deepshift-labs

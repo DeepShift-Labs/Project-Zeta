@@ -38,7 +38,9 @@ int normalize_inverse(int motor_id, int position) {
 
 void runMotorNormalizeInverse(int motor_id, int position, int time) {
 //  position = int(position);
+
   Controller.moveServo(motor_id, normalize_inverse(motor_id, position), time);
+  Serial.println(normalize_inverse(motor_id, position));
 }
 
 int degToMotorPos(int motor_id, double angle) {

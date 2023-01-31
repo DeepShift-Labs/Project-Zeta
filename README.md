@@ -4,6 +4,7 @@
 ***This repository is incomplete and under development. There may be mistakes or missing information. Please bear with it. ANY QUESTIONS YOU HAVE CAN BE ASKED IN THE DISCUSSIONS AND ISSUES. Thank you for cooperating.***
 
 The goal of Project Zeta is to develop the world's first General Intelligence. Yes, a robot uprising is coming. We, at Project Zeta, are determined to develop a reliable platform to collect, process, and train data to develop a human-like intelligence. This is possible by using a custom-built, biomimetic, robot dog, with tons of sensors for environmental perception. To learn more about the AI itself, look at this repo:
+
 [![Readme Card](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=DeepShift-Labs&theme=transparent&repo=MAGIST-Algorithm)](https://github.com/DeepShift-Labs/MAGIST-Algorithm)
 
 ## The Idea

@@ -8,7 +8,7 @@
   </joint>
   <actuator name="FL_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -19,7 +19,7 @@
   </joint>
   <actuator name="FL_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -30,7 +30,7 @@
   </joint>
   <actuator name="FR_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -41,7 +41,7 @@
   </joint>
   <actuator name="BR_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -52,7 +52,7 @@
   </joint>
   <actuator name="BL_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -63,7 +63,7 @@
   </joint>
   <actuator name="FL_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -74,7 +74,7 @@
   </joint>
   <actuator name="BL_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -85,7 +85,7 @@
   </joint>
   <actuator name="FR_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -96,7 +96,7 @@
   </joint>
   <actuator name="BL_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -107,7 +107,7 @@
   </joint>
   <actuator name="BR_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -118,7 +118,7 @@
   </joint>
   <actuator name="FR_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
@@ -129,7 +129,7 @@
   </joint>
   <actuator name="BR_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1000</mechanicalReduction>
+    <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 

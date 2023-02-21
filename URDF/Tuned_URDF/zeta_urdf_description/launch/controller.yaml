@@ -2,54 +2,54 @@ zeta_urdf:
   # Publish all joint states -----------------------------------
   joint_state_controller:
     type: joint_state_controller/JointStateController
-    publish_rate: 100
+    publish_rate: 50
 
   # Position Controllers --------------------------------------
   FL_1_position_controller:
     type: effort_controllers/JointPositionController  
     joint: FL_1
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   FL_3_position_controller:
     type: effort_controllers/JointPositionController
     joint: FL_3
-    pid: {p: 3.0, i: 0.01, d: 0.35}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   FR_3_position_controller:
     type: effort_controllers/JointPositionController
     joint: FR_3
-    pid: {p: 3.0, i: 0.01, d: 0.35}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   BR_3_position_controller:
     type: effort_controllers/JointPositionController
     joint: BR_3
-    pid: {p: 3.0, i: 0.01, d: 0.35}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   BL_3_position_controller:
     type: effort_controllers/JointPositionController
     joint: BL_3
-    pid: {p: 3.0, i: 0.01, d: 0.35}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   FL_2_position_controller:
     type: effort_controllers/JointPositionController
     joint: FL_2
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   BL_2_position_controller:
     type: effort_controllers/JointPositionController
     joint: BL_2
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   FR_1_position_controller:
     type: effort_controllers/JointPositionController
     joint: FR_1
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   BL_1_position_controller:
     type: effort_controllers/JointPositionController
     joint: BL_1
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   BR_1_position_controller:
     type: effort_controllers/JointPositionController
     joint: BR_1
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   FR_2_position_controller:
     type: effort_controllers/JointPositionController
     joint: FR_2
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}
   BR_2_position_controller:
     type: effort_controllers/JointPositionController
     joint: BR_2
-    pid: {p: 3.0, i: 0.01, d: 0.3}
+    pid: {p: 9, i: 0.03, d: 0.3055, i_clamp_min:  -1000, i_clamp_max: 1000}

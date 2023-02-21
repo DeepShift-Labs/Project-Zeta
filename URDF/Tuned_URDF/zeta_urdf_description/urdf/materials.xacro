@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<robot name="zeta_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="silver_default">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+<material name="opaque252525">
+  <color rgba="0.09803921568627451 0.09803921568627451 0.09803921568627451 1.0"/>
+</material>
+<material name="opaque246246243">
+  <color rgba="0.9647058823529412 0.9647058823529412 0.9529411764705882 1.0"/>
+</material>
+<material name="plastic_textured_regular">
+  <color rgba="0.09803921568627451 0.09803921568627451 0.09803921568627451 1.0"/>
+</material>
+<material name="plastic_matte_black">
+  <color rgba="0.09803921568627451 0.09803921568627451 0.09803921568627451 1.0"/>
+</material>
+<material name="opaque202209238">
+  <color rgba="0.792156862745098 0.8196078431372549 0.9333333333333333 1.0"/>
+</material>
+<material name="fr4">
+  <color rgba="0.26666666666666666 0.4666666666666667 0.4 1.0"/>
+</material>
+
+</robot>

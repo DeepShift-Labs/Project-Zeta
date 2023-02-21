@@ -1,0 +1,9 @@
+#goal definition
+int32 position
+std_msgs/String motor_name
+---
+#result definition
+bool success
+---
+#feedback
+bool success

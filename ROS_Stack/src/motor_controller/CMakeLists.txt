@@ -164,6 +164,7 @@ include_directories(
 catkin_install_python(PROGRAMS
  src/publisher.py
  src/motor_action_server.py
+ src/test_client.py
  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
